@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ressette</title>
+        <link href="//db.onlinewebfonts.com/c/e2aba67a61a20987775ae4a14c15dd81?family=EurostileUnicaseLTW04-Rg" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+        <script src="sketch.js"></script>
+        <svg id="bottomWheel" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.18 190.86">
+            <g id="Layer_3-2" data-name="Layer 3">
+                <g>
+                <ellipse class="cls-21" cx="94.09" cy="93.94" rx="93.59" ry="93.44"/>
+                <g>
+                    <ellipse class="cls-11" cx="93.22" cy="94.8" rx="23.4" ry="23.36"/>
+                    <path class="cls-11" d="M92.36,190.83l.87-96.03"/>
+                    <path class="cls-11" d="M92.27,95.05L9.12,46.77"/>
+                    <path class="cls-11" d="M92.66,94.66l85.45-44.1"/>
+                </g>
+                </g>
+            </g>
+        </svg> <!-- bottom wheel -->
+        <svg id="topWheel" data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.18 190.86">
+            <g id="Layer_3-2" data-name="Layer 3">
+                <g>
+                <ellipse class="cls-21" cx="94.09" cy="93.94" rx="93.59" ry="93.44"/>
+                <g>
+                    <ellipse class="cls-11" cx="93.22" cy="94.8" rx="23.4" ry="23.36"/>
+                    <path class="cls-11" d="M92.36,190.83l.87-96.03"/>
+                    <path class="cls-11" d="M92.27,95.05L9.12,46.77"/>
+                    <path class="cls-11" d="M92.66,94.66l85.45-44.1"/>
+                </g>
+                </g>
+            </g>
+        </svg> <!-- top wheel -->
+        <svg id="slider" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.51 71.5">
+            <g id="Layer_5-2" data-name="Layer 5">
+                <rect class="cls-13" x="2.5" y="2.5" width="106.51" height="66.5" rx="5.28" ry="5.28"/>
+            </g>
+        </svg> <!-- slider -->
+    </head>
+    <body>
+        <header>Ressette</header>
+        <div class="speedDials" id="speedUp">SPEED UP</div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="speedDials" id="reversed">REVERSE</div>
+        <div id="play">
+            <button id="playB" onclick="toggleSong()">
+                <svg id="playButton" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 183.98">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <g>
+                        <rect class="cls-1" x="2.5" y="2.5" width="158" height="178.98" rx="24.68" ry="24.68"/>
+                        <polygon class="cls-2" points="129 92.11 43.5 42.74 43.5 141.47 129 92.11"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <div id="pause">
+            <button id="pauseB" onclick="toggleSong()">
+                <svg id="pauseButton" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 183.98">
+                    <g id="Layer_2-2" data-name="Layer 2">
+                        <g>
+                        <rect class="cls-1" x="2.5" y="2.5" width="158" height="178.98" rx="24.68" ry="24.68"/>
+                        <rect class="cls-20" x="37.68" y="42.15" width="28.18" height="100"/>
+                        <rect class="cls-20" x="88" y="42.15" width="28.18" height="100"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+        <footer>
+            <div class="bottom">
+                <p>HackGT9 creation</p>
+            </div>
+        </footer>
+    </body>
+</html>

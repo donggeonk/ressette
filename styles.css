@@ -1,0 +1,177 @@
+@import url(//db.onlinewebfonts.com/c/e2aba67a61a20987775ae4a14c15dd81?family=EurostileUnicaseLTW04-Rg);
+
+@font-face {
+    font-family: "EurostileUnicaseLTW04-Rg";
+    src: url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.eot");
+    src: url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.woff") format("woff"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e2aba67a61a20987775ae4a14c15dd81.svg#EurostileUnicaseLTW04-Rg") format("svg");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    font-family: "EurostileUnicaseLTW04-Rg";
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    justify-content: center;
+}
+
+body {
+    max-height: 100%;
+    background: #f5f5f5 url(static/full_bgrnd.svg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    top: 97%;
+    justify-content: center;
+}
+
+.speedDials {
+    position: relative;
+    display: flex;
+    text-align: right;
+    font-size: 15px;
+    color: #000;
+}
+
+#speedUp {
+    position: absolute;
+    top: 17%;
+    left: 82%;
+}
+
+#reversed {
+    position: absolute;
+    top: 49%;
+    left: 82%;
+}
+
+#playButton {
+    width: 14.5%;
+    position: absolute;
+    left: 81%;
+    top: 12%;
+}
+
+#pauseButton {
+    width: 14.5%;
+    position: absolute;
+    left: 81%;
+    top: 25.5%;
+}
+
+#topWheel {
+    width: 16%;
+    position: absolute;
+    left: 44.5%;
+    top: 27.5%;
+    transform: translate(-50%, -50%);
+    animation: myfirst 1.5s infinite linear;
+}
+
+#bottomWheel {
+    width: 16%;
+    position: absolute;
+    left: 44.5%;
+    top: 67.5%;
+    transform: translate(-50%, -50%);
+    animation: myfirst 1.5s infinite linear;
+}
+@keyframes myfirst {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+#slider {
+    width: 10%;
+    position: absolute;
+    left: 83.5%;
+    top: -16%;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    position: absolute;
+    left: 84%;
+    top: 20.5%;
+    -webkit-appearance: slider-vertical;
+    appearance: none;
+    width: 9%; /* Full-width */
+    height: 27%; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+}
+
+/* .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 0;
+    background: url('static/slidebar.svg');
+}
+  
+.slider::-moz-range-thumb {
+    border: 0;
+    background: url('static/slidebar.svg');
+} */
+
+
+
+
+/* play & pause */
+.cls-1 {
+    fill: #fbb03b;
+}
+
+.cls-1, .cls-2, .cls-20 {
+    stroke: #dd7b07;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+.cls-2, .cls-20 {
+    fill: #ffd974;
+}
+
+.cls-20 {
+    height: 100px;
+}
+
+/* wheel */
+.cls-11 {
+    stroke-width: 5px;
+}
+
+.cls-11, .cls-21 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.cls-21 {
+    fill: #fff;
+}
+
+/* slider */
+.cls-13 {
+    fill: #e3e2e4;
+    stroke: #c6c6c3;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
